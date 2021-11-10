@@ -1,0 +1,113 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+    gap: 2%;
+}
+
+.box{
+    width: 70%;
+    height: 25%;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid black;
+    align-items: flex-end;
+    background-color: grey;
+    overflow: hidden;
+}
+
+p{
+    font-weight: bold;
+    padding: 15px 20px 20px 20px;
+}
+
+.spalvotas{
+    border-left: 1px solid black;
+    border-bottom: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} 
+
+.chicken{
+    background-color: rgb(228, 150, 106);
+    width: 90px;
+}
+
+.beef{
+    background-color: rgb(219, 48, 48); 
+    width: 90px;
+}
+
+.sushi{
+    background-color: rgb(218, 224, 123); 
+    width: 90px;
+}
+
+/* Plansete */
+
+@media (min-width: 425px)
+{.container{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+
+}
+
+h1{
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 7%;
+   
+}
+
+.pirmas{
+    width: 40%;
+    height: 35%;
+}
+
+.antras{
+    width: 40%;
+    height: 35%;
+}
+
+.trecias{
+    width: 80%;
+    height: 35%;
+}
+} 
+
+/* Kompiuteris */
+
+@media (min-width: 768px)
+{ .container{
+
+}
+
+
+.box{
+    margin-bottom: 20%;
+}
+
+.pirmas{
+    width: 31%;
+}
+.antras{
+    width: 31%;
+}
+.trecias{
+    width: 31%;
+}
+
+}
